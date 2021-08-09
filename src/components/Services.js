@@ -11,7 +11,7 @@ function Services() {
         </div>
       </Row>
       <div className="container-fluid mt-3 col-10">
-        <Row className="mt-5 row-cols-1 row-cols-lg-4 justify-content-center">
+        <Row className="mt-5 mb-5 row-cols-1 row-cols-lg-4 justify-content-center">
           <div className="card mx-3 p-4 mb-lg-2 mb-3 card-style">
             <div className="card-body">
               <h4 className=" text-center">BOARDING</h4>
@@ -38,7 +38,7 @@ function Services() {
               </p>
             </div>
           </div>
-          <div className="card mx-3 p-4 mb-lg-2 mb-3 card-style">
+          <div className="card mx-3 p-4 mb-lg-2 card-style">
             <div className="card-body">
               <h4 className="text-center">TRAINING</h4>
               <h5 className="card-title text-center">
