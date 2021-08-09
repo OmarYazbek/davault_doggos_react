@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, NavbarBrand } from "react-bootstrap";
 import HeaderItem from "./HeaderItem";
 import BookNow from "./BookNow";
-import { BrowserRouter, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -15,19 +15,19 @@ function Header() {
           D / D
         </NavbarBrand>
         <div className="collapse navbar-collapse" id="navContent">
-          <BrowserRouter>
-            <Switch>
-              <>
-                <ul className="navbar-nav mx-auto">
-                  <HeaderItem title="HOME" />
-                  <HeaderItem title="ABOUT" />
-                  <HeaderItem title="SERVICES" />
-                  <HeaderItem title="CONTACT" />
-                </ul>
-                <BookNow title="Book Now!" />
-              </>
-            </Switch>
-          </BrowserRouter>
+          <>
+            <ul className="navbar-nav mx-auto">
+              <HeaderItem title="HOME" />
+              <Link to="/About">
+                <HeaderItem title="ABOUT" />
+              </Link>
+              <Link to="/Services">
+                <HeaderItem title="SERVICES" />
+              </Link>
+              <HeaderItem title="CONTACT" />
+            </ul>
+            <BookNow title="Book Now!" />
+          </>
         </div>
       </div>
     </Navbar>

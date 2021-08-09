@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -9,11 +10,19 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <About />
-      <Services />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Home />
+        <Switch>
+          <Route path="/About">
+            <About />
+          </Route>
+          <Route path="/Services">
+            <Services />
+          </Route>
+        </Switch>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
