@@ -13,6 +13,7 @@ h2 {
 
 .nav-link {
   color: black !important;
+  border-bottom: none ;
 }
 
 .background-primary {
@@ -25,7 +26,7 @@ h2 {
 }
 
 .color-primary {
-  color: #c8ede5;;
+  color: #c8ede5;
 }
 
 .color-secondary {
@@ -39,6 +40,11 @@ h2 {
 .line {
   width: 50%;
   margin: auto;
+}
+
+.hoverContact:hover {
+  background-color: #c8ede5;
+  color: white;
 }
 
 .hover:hover {
@@ -70,19 +76,13 @@ h2 {
   font-size: 1rem;
 }
 
-.active {
-  background-color: #e5aae6;
-  color: white !important;
-}
 
 .card-style {
   background-color: #e5aae6;
   color: white;
 }
 
-.border-main {
-  border: 3px solid #c8ede5;
-}
+
 
 .footer {
   background-color: #F8F9FA;
@@ -98,6 +98,8 @@ h2 {
   padding-left: .3rem;
   transition: .2s ease-in-out;
 }
+
+
 
 .site-links {
   border-bottom: 1px solid #e5aae6;
