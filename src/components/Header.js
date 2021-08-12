@@ -24,7 +24,9 @@ function Header() {
               <Link to="/Services">
                 <HeaderItem title="SERVICES" />
               </Link>
-              <HeaderItem title="CONTACT" />
+              <Link to="/ContactModal">
+                <HeaderItem title="CONTACT" />
+              </Link>
             </ul>
             <BookNow title="Book Now!" />
           </>
